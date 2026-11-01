@@ -1,0 +1,20 @@
+{
+  "A-CURRENT": {
+    "components": {
+      "scanner": 329,
+      "delivery": 24,
+      "required_carrier": 49
+    },
+    "supports_loose_prints": true,
+    "supports_film": null
+  },
+  "B-CURRENT": {
+    "components": {
+      "scanner": 299,
+      "delivery": 19,
+      "required_software": 110
+    },
+    "supports_loose_prints": true,
+    "supports_film": null
+  }
+}

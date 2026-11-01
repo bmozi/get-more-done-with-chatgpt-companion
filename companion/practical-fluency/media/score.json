@@ -1,0 +1,15 @@
+{
+  "original_authored_reference": true,
+  "frequencies_hz": [
+    261.63,
+    329.63,
+    392,
+    329.63,
+    293.66,
+    349.23,
+    392,
+    261.63
+  ],
+  "seconds_each": 1,
+  "synthesis": "sine tones with edge fade; no provider or borrowed recording"
+}

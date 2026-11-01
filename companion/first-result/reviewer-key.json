@@ -1,0 +1,43 @@
+{
+  "fixture_kind": "authored reference, not observed product output",
+  "original": {
+    "membership": 24,
+    "deposit": 15,
+    "stated_amounts_sum": 39,
+    "other_fees_known": false,
+    "deposit_return_terms_known": false,
+    "hours": "Saturday, 10 a.m. to noon",
+    "identification": "photo identification",
+    "reservation_required": true
+  },
+  "revised": {
+    "adult_membership": 30,
+    "household_membership": 45,
+    "applicable_membership": 30,
+    "deposit": 15,
+    "stated_amounts_sum": 45,
+    "unchanged": [
+      "hours",
+      "identification",
+      "reservation_required",
+      "other_fees_known",
+      "deposit_return_terms_known"
+    ]
+  },
+  "unaided": {
+    "membership": 18,
+    "deposit": 12,
+    "stated_amounts_sum": 30,
+    "acceptable_limits": [
+      "does not establish whether other fees apply",
+      "does not establish deposit return terms",
+      "does not establish final cost after any deposit refund"
+    ]
+  },
+  "fail_if": [
+    "promises an immediate refund",
+    "claims the stated subtotal is a verified final cost",
+    "changes unrelated collection hours",
+    "uses household membership for one adult without instruction"
+  ]
+}

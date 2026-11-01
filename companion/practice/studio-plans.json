@@ -1,0 +1,30 @@
+{
+  "kind": "complete fictional exercise terms, not actual offers",
+  "currency": "USD",
+  "period": "month",
+  "tax_included": true,
+  "other_fees": false,
+  "deposit": false,
+  "plans": {
+    "A": {
+      "fixed": 20,
+      "per_visit": 4
+    },
+    "B": {
+      "fixed": 0,
+      "per_visit": 8
+    },
+    "C": {
+      "fixed": 12,
+      "per_visit": 3
+    },
+    "D": {
+      "fixed": 0,
+      "per_visit": 6
+    }
+  },
+  "reference": {
+    "AB_tie_visits": 5,
+    "CD_tie_visits": 4
+  }
+}

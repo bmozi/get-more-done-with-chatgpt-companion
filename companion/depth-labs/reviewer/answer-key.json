@@ -1,0 +1,134 @@
+{
+  "6": {
+    "artifact": "Current-state brief",
+    "task": "Change source B so it settles the date only.",
+    "reference": "Do not carry indoors or contribution status into the revised decision as if newly established. Keep prior claims with their actual authority.",
+    "kind": "authored reference; not an observed model or learner result"
+  },
+  "7": {
+    "artifact": "Claim ledger",
+    "task": "Remove SPEC-S1 from the mini packet.",
+    "reference": "Cedar cost remains calculable; required duplex is unverified. Q2 complete cost is $392, not a complete compliance determination.",
+    "kind": "authored reference; not an observed model or learner result"
+  },
+  "14": {
+    "artifact": "Visual explanation",
+    "task": "Change membership $24 to $30; retain $15 deposit and unknown fee.",
+    "reference": "Stated payments total $45. Do not depict guaranteed refund or claim a complete final cost. Labels, captions and descriptions must agree.",
+    "kind": "authored reference; not an observed model or learner result"
+  },
+  "16": {
+    "artifact": "Checked numerical visual",
+    "task": "Compare $10+$2 per poster with $4 per poster.",
+    "reference": "Tie at five posters, $20. Missing delivery terms prevent a complete delivered-price comparison.",
+    "kind": "authored reference; not an observed model or learner result"
+  },
+  "25": {
+    "artifact": "Selective reusable method",
+    "task": "Try an intended briefing request, explanation-only request, absent quote and absent cap.",
+    "reference": "Method should fit intended comparisons, avoid irrelevant format, preserve absent current sources and allow supported partial analysis with cap unresolved.",
+    "kind": "authored reference; not an observed model or learner result"
+  },
+  "27": {
+    "artifact": "Connection card",
+    "task": "Remove access to the current notice.",
+    "reference": "No claim that the current file was read. A title in history is insufficient. Use a bounded upload or missing-input report.",
+    "kind": "authored reference; not an observed model or learner result"
+  },
+  "28": {
+    "artifact": "Schedule specification",
+    "task": "Design four private learning reviews, then rehearse stop/cancel.",
+    "reference": "Require time zone, source, output, missing-log route and end condition. Saved schedule and actual run evidence are separate.",
+    "kind": "authored reference; not an observed model or learner result"
+  },
+  "29": {
+    "artifact": "Verified review",
+    "task": "Seed a mandatory-cost omission in a draft.",
+    "reference": "Actual SDK fixture: Alder $329+$24+$49=$402. Under $390 cap it fails by $12. Do not invent a cheaper carrier kit.",
+    "kind": "authored reference; not an observed model or learner result"
+  },
+  "33": {
+    "artifact": "Agent boundary map",
+    "task": "Define fictional warranty-record IDs and no-fit behavior.",
+    "reference": "Application accepts approved IDs, rejects arbitrary paths; live source/model behavior remains distinct from scripted boundary checks.",
+    "kind": "authored reference; not an observed model or learner result"
+  },
+  "34": {
+    "artifact": "Evaluation record",
+    "task": "Find first material failure in a trace.",
+    "reference": "Actual four SDK fixtures: standard, lower-budget, film-required, unavailable current A. Do not claim new depth-lab tests are live SDK trials.",
+    "kind": "authored reference; not an observed model or learner result"
+  },
+  "41": {
+    "artifact": "Truthful interview evidence",
+    "task": "Answer a changed source/checklist conflict.",
+    "reference": "Preserve the conflict, seek controlling source, do not invent employment scale, achievement metrics or credentials.",
+    "kind": "authored reference; not an observed model or learner result"
+  },
+  "42": {
+    "artifact": "Conversation rehearsal",
+    "task": "Change your own availability rather than the collaborator\u2019s.",
+    "reference": "Revise request to acknowledge the changed constraint; no new agreement can be asserted unless actually accepted.",
+    "kind": "authored reference; not an observed model or learner result"
+  },
+  "47": {
+    "artifact": "Reconciled ledger",
+    "task": "Add R5 booked with no payment, then delivered unpaid.",
+    "reference": "Initial totals unchanged except bookings. After delivery earned $180 and unpaid $100. Wrong R3 delivery status can still reconcile.",
+    "kind": "authored reference; not an observed model or learner result"
+  },
+  "48": {
+    "artifact": "Substitute runbook",
+    "task": "Remove image permission, then approved notice.",
+    "reference": "Approved text-only T1 allows missing-image branch; missing approved notice blocks current-fact drafting. Never substitute one fallback for all missing inputs.",
+    "kind": "authored reference; not an observed model or learner result"
+  },
+  "49": {
+    "artifact": "Decision tree",
+    "task": "Test missing fields, exact limits, overlaps and changed closing.",
+    "reference": "Missing first; hard limits next; public review last. R2 closing 18:30 permits L3 but not 91-minute duration.",
+    "kind": "authored reference; not an observed model or learner result"
+  },
+  "50": {
+    "artifact": "Prompt experiment",
+    "task": "Use H1\u2013H4 once with a chosen prompt; then create unseen cases.",
+    "reference": "H1 eligible 09:00\u201310:00; H2 ineligible opening; H3 ineligible reserved duration; H4 incomplete public status. Used-for-revision cases are development.",
+    "kind": "authored reference; not an observed model or learner result"
+  },
+  "51": {
+    "artifact": "Traceable three-stage chain",
+    "task": "Apply S2, preserving source history.",
+    "reference": "Budget becomes $150 in current extraction/brief. Saturday remains proposed; Maya has no reply date; Theo\u2019s offer remains conditional. No booking or Friday deadline.",
+    "kind": "authored reference; not an observed model or learner result"
+  },
+  "52": {
+    "artifact": "Recovery card",
+    "task": "Run before-action, lost-acknowledgment and unavailable scenarios.",
+    "reference": "Local destination counts: 1,1,0. Unavailable holds unresolved; repeated same identity deduplicates; new identities can create duplicates.",
+    "kind": "authored reference; not an observed model or learner result"
+  },
+  "53": {
+    "artifact": "Reconciled specialist memo",
+    "task": "Review the stall substitution.",
+    "reference": "Base $90. Replace $5 sign already in materials with $12 canopy: $97, leaving $3. Venue rules/weather remain unknown.",
+    "kind": "authored reference; not an observed model or learner result"
+  },
+  "54": {
+    "artifact": "Boundary test report",
+    "task": "Test clean draft, send, wrong destination, stale policy, changed artifact.",
+    "reference": "Clean control passes modeled gate. Invalid operation/destination/version/fields fail. A matching content hash does not establish truth.",
+    "kind": "authored reference; not an observed model or learner result"
+  },
+  "55": {
+    "artifact": "Arrangement adoption memo",
+    "task": "Compare source-only and current-source tasks.",
+    "reference": "Documentary evaluation is not installation evidence. Offline source-only success does not establish current research or complete absence of remote data routes.",
+    "kind": "authored reference; not an observed model or learner result"
+  },
+  "56": {
+    "artifact": "Usable capstone kit",
+    "task": "Classify five-person private 09:20/40-minute case, then 09:10.",
+    "reference": "09:05\u201310:15 reserved, 70 minutes: eligible. Changed setup 08:55: ineligible. A correct guess without explanation is not mastery evidence.",
+    "kind": "authored reference; not an observed model or learner result"
+  }
+}

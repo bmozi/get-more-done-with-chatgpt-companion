@@ -1,0 +1,20 @@
+{
+  "kind": "fictional offer for comprehension practice; not for sale",
+  "duration_minutes": 90,
+  "maximum_loose_prints": 50,
+  "practice_price_dollars": 60,
+  "includes": [
+    "grouping",
+    "labeling"
+  ],
+  "excludes": [
+    "scanning",
+    "restoration",
+    "home visits"
+  ],
+  "test_update": {
+    "duration_minutes": 60,
+    "maximum_loose_prints": 30,
+    "practice_price_dollars": 60
+  }
+}

@@ -1,0 +1,53 @@
+[
+  {
+    "id": "standard",
+    "source_ids": [
+      "BRIEF-01",
+      "A-OLD",
+      "A-CURRENT",
+      "B-CURRENT",
+      "SURVEY-01"
+    ],
+    "budget": 420,
+    "requires_film": false,
+    "change": "Use the current decision brief."
+  },
+  {
+    "id": "lower-budget",
+    "source_ids": [
+      "BRIEF-01",
+      "A-OLD",
+      "A-CURRENT",
+      "B-CURRENT",
+      "SURVEY-01"
+    ],
+    "budget": 390,
+    "requires_film": false,
+    "change": "Board update: replace the $420 cap with $390. All other requirements stay the same."
+  },
+  {
+    "id": "film-required",
+    "source_ids": [
+      "BRIEF-01",
+      "A-OLD",
+      "A-CURRENT",
+      "B-CURRENT",
+      "SURVEY-01"
+    ],
+    "budget": 420,
+    "requires_film": true,
+    "change": "Board update: film scanning is now required in addition to loose photographic prints."
+  },
+  {
+    "id": "missing-current-a",
+    "source_ids": [
+      "BRIEF-01",
+      "A-OLD",
+      "B-CURRENT",
+      "SURVEY-01"
+    ],
+    "budget": 420,
+    "requires_film": false,
+    "change": "A-CURRENT is unavailable. Do not assume an older quote is current."
+  }
+]

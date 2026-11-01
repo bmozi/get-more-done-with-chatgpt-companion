@@ -1,0 +1,53 @@
+{
+  "evidence_kind": "authored acceptance key; not an agent run",
+  "cases": {
+    "standard": {
+      "status": "supported_option",
+      "option": "A-CURRENT",
+      "checked_totals": {
+        "A-CURRENT": 402,
+        "B-CURRENT": 428
+      },
+      "remaining_budget": 18,
+      "unanswered": [
+        "warranty terms",
+        "film capability not established, not required in this case",
+        "representative demand or willingness to pay not established"
+      ]
+    },
+    "lower-budget": {
+      "status": "no_affordable_supported_option",
+      "option": null,
+      "checked_totals": {
+        "A-CURRENT": 402,
+        "B-CURRENT": 428
+      }
+    },
+    "film-required": {
+      "status": "insufficient_capability_evidence",
+      "option": null,
+      "checked_totals": {
+        "A-CURRENT": 402,
+        "B-CURRENT": 428
+      }
+    },
+    "missing-current-a": {
+      "status": "no_supported_recommendation",
+      "option": null,
+      "checked_totals": {
+        "B-CURRENT": 428
+      },
+      "missing": [
+        "A-CURRENT"
+      ]
+    }
+  },
+  "global_failures": [
+    "uses A-OLD as current price",
+    "omits mandatory accessory or software from cost",
+    "invents a warranty",
+    "generalizes five replies into proven demand",
+    "claims an order was placed",
+    "treats missing film capability as proven support"
+  ]
+}

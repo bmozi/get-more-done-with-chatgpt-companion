@@ -1,0 +1,44 @@
+{
+  "kind": "constructed original local reference artifacts; no live AI-provider generation",
+  "book": "chatgpt",
+  "video_duration_seconds": 20,
+  "video_frame_pixels": [
+    1280,
+    720
+  ],
+  "narration": "macOS Samantha text-to-speech, original script; not voice cloning",
+  "cue": "original eight-note score and deterministic synthesis",
+  "caption_role": "section-title text, separate from full narration transcript",
+  "generator_script": "../build_media.py",
+  "files": {
+    "audio-sequence.txt": "4fb1064856fbdc07e06ef613f2966d942c50f4d236202c6749564574ee956ff1",
+    "captions.srt": "500c0f39081ab1d6e4235f50936848629eaed841b8d761a786009adfe43746f9",
+    "frame-1.png": "e3cec59f83906423f4a0aab90232ce06020425d70f9c16ae90043351a16d8d04",
+    "frame-2.png": "00cc958468b8ccfdf9e8d933bc6a6079c7593e4945e72657be5f33aa6860647b",
+    "frame-3.png": "b33e542285fc07d5e8d8489edfbd8b44d6f1fa65a7e2d5140421f383bd6fd641",
+    "narration-source.aiff": "3fc0c6dd186a5d0e9e0d042528c6049e6bfbb53298840681882d38089b7428e4",
+    "narration-with-cue.wav": "63c1206753f5281a463d9bac32b96f5b5d655cae85368705b611a7996355941c",
+    "narration.txt": "0f6b9d4439101d22f11cc1c66bd5f26456227a3eb293cd030ac6944e8f6b233a",
+    "narration.wav": "83031de0cde5cf2ece30ba236eea3a68fc3fc8edaefd2be87be1c2423015ac48",
+    "original-cue.wav": "5ed0d48f1cf58ffdd920658f401bb1b91bb85e7895a8ec8ac0f2b2861dd9a9a7",
+    "reference.mp4": "e9a382f3e8ad477447a3c301a508a9992957380b365f55f79d4d048d6e918e3d",
+    "score.json": "e2aa71530096fae12acc5c392a010154e961949d78af4db50522eb9b148839e7",
+    "segment-1.aiff": "4b0f4bb46279932a195843f88bc41f7e173a635e097c6b380d964ced4690d3c0",
+    "segment-1.txt": "9b9d2864de043f641d964d4618c94423d62704bc8d667c5dd9d7c47bb66c760a",
+    "segment-1.wav": "93644d377e5a946d5ea9dde6425dc4850078539ab88e2b1ea6a472215b198318",
+    "segment-2.aiff": "905a934e18ba7a31f9c382a17ce52f91b96dfa7c5fdabe2113e5452e17c58fbe",
+    "segment-2.txt": "98d6ad9965bc7e51ca4e44948dc6ec06da867be77c92dc70df844474e681631b",
+    "segment-2.wav": "a767ce04efe9bf19c0703bc945da3c710cf7e960ea530d6a441cca3991b9d695",
+    "segment-3.aiff": "d3643adf728d805b21839e4d7143c9dc22439e2ad858e0c875015fe61dc27f46",
+    "segment-3.txt": "8d08d9e9c82dda0045675c36d5d1b227d88196bb16b748328f0c75e698e48a5a",
+    "segment-3.wav": "4aa2e5807462fe7305cb0b48a791f4c95c913aa92b5eae234e4f45a0ab164b94",
+    "sequence.txt": "338ff2a0cc4f5e6e554856d02438f76dd727bfd2b750b93f90c4cccb7ffd8d38",
+    "video-narration.wav": "3a4625a13578c2064e07fe554f247e9253c40f1941a7fa1eb1eacb1c706f2379"
+  },
+  "checks_pending": [
+    "human listen-back",
+    "native editor workflow",
+    "live generative-service trial if chosen",
+    "independent audience comprehension"
+  ]
+}

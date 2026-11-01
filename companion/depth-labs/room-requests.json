@@ -1,0 +1,70 @@
+[
+  {
+    "id": "L1",
+    "people": 6,
+    "start": "10:00",
+    "duration": 60,
+    "public": false
+  },
+  {
+    "id": "L2",
+    "people": 8,
+    "start": "16:15",
+    "duration": 90,
+    "public": false
+  },
+  {
+    "id": "L3",
+    "people": 8,
+    "start": "16:16",
+    "duration": 90,
+    "public": false
+  },
+  {
+    "id": "L4",
+    "people": 6,
+    "start": "10:00",
+    "duration": 60,
+    "public": true
+  },
+  {
+    "id": "L5",
+    "start": "10:00",
+    "duration": 60,
+    "public": false
+  },
+  {
+    "id": "L6",
+    "people": 9,
+    "start": "10:00",
+    "duration": 60,
+    "public": true
+  },
+  {
+    "id": "H1",
+    "people": 4,
+    "start": "09:15",
+    "duration": 30,
+    "public": false
+  },
+  {
+    "id": "H2",
+    "people": 4,
+    "start": "09:14",
+    "duration": 30,
+    "public": false
+  },
+  {
+    "id": "H3",
+    "people": 4,
+    "start": "10:00",
+    "duration": 91,
+    "public": false
+  },
+  {
+    "id": "H4",
+    "people": 4,
+    "start": "10:00",
+    "duration": 30
+  }
+]

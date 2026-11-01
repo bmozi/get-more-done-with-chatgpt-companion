@@ -1,0 +1,11 @@
+attempt,prompt_version,policy_version,case_id,surface,model_label,actual_output_file,decision_check,interval_check,missing_information_check,unsupported_claims,diagnosis,revision,review_effort,status
+,,R1,L1,,,,,,,,,,,not run
+,,R1,L2,,,,,,,,,,,not run
+,,R1,L3,,,,,,,,,,,not run
+,,R1,L4,,,,,,,,,,,not run
+,,R1,L5,,,,,,,,,,,not run
+,,R1,L6,,,,,,,,,,,not run
+,,R1,H1,,,,,,,,,,,not run
+,,R1,H2,,,,,,,,,,,not run
+,,R1,H3,,,,,,,,,,,not run
+,,R1,H4,,,,,,,,,,,not run

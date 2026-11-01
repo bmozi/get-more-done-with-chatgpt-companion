@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src blob:; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'"
+    />
+    <title>My next practice</title>
+    <style>
+      body {
+        font:
+          18px/1.6 system-ui,
+          sans-serif;
+        color: #142d42;
+        background: #f5f2e9;
+        margin: 0;
+      }
+      main {
+        max-width: 740px;
+        margin: auto;
+        padding: 30px 20px;
+      }
+      h1 {
+        font:
+          700 2.4rem/1.1 Georgia,
+          serif;
+      }
+      .eyebrow {
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+      }
+      section {
+        background: white;
+        border: 1px solid #bcc8cf;
+        border-radius: 12px;
+        padding: 20px;
+        margin: 20px 0;
+      }
+      label {
+        display: block;
+        margin: 12px 0;
+      }
+      input[type="text"] {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 12px;
+        font: inherit;
+        border: 1px solid #657986;
+        border-radius: 5px;
+      }
+      button {
+        font: inherit;
+        background: #174d71;
+        color: white;
+        border: 0;
+        border-radius: 5px;
+        padding: 10px 16px;
+        margin: 6px 6px 6px 0;
+        cursor: pointer;
+      }
+      button:focus-visible,
+      input:focus-visible {
+        outline: 3px solid #b67a15;
+        outline-offset: 3px;
+      }
+      .muted {
+        font-size: 0.92rem;
+        color: #425767;
+      }
+      #message {
+        min-height: 2em;
+        font-weight: 600;
+      }
+      input[type="checkbox"] {
+        width: 22px;
+        height: 22px;
+        vertical-align: middle;
+        margin-right: 12px;
+      }
+      code {
+        overflow-wrap: anywhere;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p class="eyebrow">Your first useful tool</p>
+      <h1>My next practice</h1>
+      <p>One small tool you can understand, check, and change.</p>
+      <section aria-label="Your tool">
+        <form id="topicForm" novalidate>
+          <label for="topic">What will you practice next?</label
+          ><input
+            id="topic"
+            type="text"
+            maxlength="120"
+            placeholder="For example: explain a spreadsheet total"
+          /><button type="submit">Save topic</button>
+        </form>
+        <p id="current">No topic yet. Add one above.</p>
+        <label
+          ><input id="done" type="checkbox" disabled />Practice completed</label
+        >
+      </section>
+      <section aria-label="Keep your work">
+        <h2>Keep your work</h2>
+        <p>
+          This version keeps changes only while this page stays open. Refreshing
+          or closing starts fresh. Download a backup, then restore it when you
+          return. No account, automatic saving, or synchronization.
+        </p>
+        <button id="backup" type="button">Download backup</button
+        ><label for="restore">Restore backup (JSON file)</label
+        ><input id="restore" type="file" accept=".json,application/json" />
+        <p id="message" role="status" aria-live="polite"></p>
+      </section>
+      <p class="muted">
+        This local file sends no requests to an AI service. Use invented
+        practice information first. A downloaded handoff note is readable
+        evidence; a JSON backup is the file used to restore state.
+      </p>
+    </main>
+    <script>
+      const KIND = "practice";
+      function say(text) {
+        document.querySelector("#message").textContent = text;
+      }
+      function download(name, text, type) {
+        const url = URL.createObjectURL(new Blob([text], { type }));
+        const link = document.createElement("a");
+        link.href = url;
+        link.download = name;
+        document.body.append(link);
+        link.click();
+        link.remove();
+        setTimeout(() => URL.revokeObjectURL(url), 1000);
+      }
+      let state = { topic: "", done: false };
+      function validate(value) {
+        if (
+          !value ||
+          value.kind !== KIND ||
+          value.version !== 1 ||
+          typeof value.topic !== "string" ||
+          !value.topic.trim() ||
+          value.topic.length > 120 ||
+          typeof value.done !== "boolean"
+        )
+          throw Error(
+            "Choose a version 1 practice backup with a topic of 1–120 characters.",
+          );
+        return { topic: value.topic.trim(), done: value.done };
+      }
+      function render() {
+        document.querySelector("#current").textContent =
+          state.topic || "No topic yet. Add one above.";
+        document.querySelector("#done").disabled = !state.topic;
+        document.querySelector("#done").checked = state.done;
+        document.querySelector("#topic").value = state.topic;
+      }
+      document
+        .querySelector("#topicForm")
+        .addEventListener("submit", (event) => {
+          event.preventDefault();
+          const topic = document.querySelector("#topic").value.trim();
+          if (!topic || topic.length > 120) {
+            say(
+              "Enter a topic of 1–120 characters. Your saved topic has not changed.",
+            );
+            return;
+          }
+          state = { topic, done: false };
+          render();
+          say(
+            "Topic saved in this open page. Download a backup before closing.",
+          );
+        });
+      document.querySelector("#done").addEventListener("change", (event) => {
+        state.done = event.target.checked;
+        say("Completion updated. Download a fresh backup to keep this change.");
+      });
+      function packet() {
+        if (!state.topic)
+          throw Error("Add a topic before downloading a backup.");
+        return { version: 1, kind: KIND, ...state };
+      }
+      function summary() {
+        return (
+          state.topic + " — " + (state.done ? "completed" : "next practice")
+        );
+      }
+      document.querySelector("#backup").addEventListener("click", () => {
+        try {
+          download(
+            KIND + "-backup.json",
+            JSON.stringify(packet(), null, 2),
+            "application/json",
+          );
+          say(
+            "Backup download requested. Check your Downloads folder and verify it with Restore backup.",
+          );
+        } catch (error) {
+          say(error.message);
+        }
+      });
+      document
+        .querySelector("#restore")
+        .addEventListener("change", async (event) => {
+          const file = event.target.files[0];
+          if (!file) return;
+          try {
+            if (file.size > 10000)
+              throw Error(
+                "That file is too large. Choose a small backup made by this app.",
+              );
+            const next = validate(JSON.parse(await file.text()));
+            if (
+              !confirm(
+                "Replace the current page's information with this backup?",
+              )
+            ) {
+              say("Restore cancelled. Current information is unchanged.");
+              return;
+            }
+            state = next;
+            render();
+            say(
+              "Backup restored. Check the topic or items against the file you chose.",
+            );
+          } catch (error) {
+            say(
+              "Backup not restored. Current information is unchanged. " +
+                error.message,
+            );
+          } finally {
+            event.target.value = "";
+          }
+        });
+      render();
+    </script>
+  </body>
+</html>

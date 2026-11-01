@@ -1,0 +1,2 @@
+FICTIONAL POLICY-R1
+Capacity: at most 8 people. Open 09:00–18:00 inclusive. Setup: 15 minutes before meeting; cleanup: 15 minutes after. Full reserved duration: at most 120 minutes. Required: people, start, duration, public/private. Missing required fields take priority and produce incomplete. Complete requests failing any hard limit are ineligible. Otherwise public requires staff review; private is eligible. No booking authority. Malformed fields require correction; the reference program rejects them.

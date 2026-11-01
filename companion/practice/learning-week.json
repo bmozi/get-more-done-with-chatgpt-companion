@@ -1,0 +1,20 @@
+{
+  "kind": "fictional practice log",
+  "planned_sessions": 3,
+  "planned_minutes_each": 20,
+  "logged_minutes": {
+    "Tuesday": 15,
+    "Thursday": 20,
+    "Friday": 0
+  },
+  "observations": {
+    "Tuesday": "omitted required software from explanation",
+    "Thursday": "included software, did not explain listed versus complete price"
+  },
+  "reason_for_missed_session": null,
+  "reference": {
+    "planned_minutes": 60,
+    "logged_minutes": 35,
+    "difference_minutes": 25
+  }
+}
