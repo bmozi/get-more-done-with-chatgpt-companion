@@ -1,6 +1,6 @@
 # Build toward a checked briefing
 
-This is an original fictional source packet and candidate SDK implementation for proposed units U33–U34. It has 17 passing offline tests; live model behavior remains untested. The [lesson design](../../planning/LESSON-DESIGN.md) explains the different educational purpose alongside Claude's operations/manual agent.
+This is an original fictional source packet and candidate SDK implementation for proposed units U33–U34. It has 17 passing offline tests; live model behavior remains untested. The lesson design (private development record; not included in this download) explains the different educational purpose alongside Claude's operations/manual agent.
 
 The board of Maple Digital Archive needs a short decision brief about a photo scanner. The packet contains a superseded quote, two current quotes with mandatory extras, and a small informal interest note. The reader must explain which recommendation is supported, calculate complete quoted costs, and preserve what remains unknown.
 
@@ -41,7 +41,7 @@ python3 companion/briefing-agent/app/core.py --case standard
 uv run --with openai-agents==0.24.0 python -m unittest discover -s companion/briefing-agent/app -p 'test_agent.py' -v
 ```
 
-The first command is a deterministic baseline, not an agent. The second runs the real SDK loop with scripted responses and checks actual tool callbacks and observations. It covers all four cases, wrong costs, missing capability evidence, stale quotes, unread sources, demand overclaims, extra action fields, invalid dollars, arbitrary paths, failed reads, concurrent limits and stopping. The captured test run blocked socket connections and child processes during execution; package resolution and imports occurred before that guard. [Captured evidence](../../research/validation-2026-10-31/AGENT-VALIDATION.md).
+The first command is a deterministic baseline, not an agent. The second runs the real SDK loop with scripted responses and checks actual tool callbacks and observations. It covers all four cases, wrong costs, missing capability evidence, stale quotes, unread sources, demand overclaims, extra action fields, invalid dollars, arbitrary paths, failed reads, concurrent limits and stopping. The captured test run blocked socket connections and child processes during execution; package resolution and imports occurred before that guard. Captured evidence (private development record; not included in this download).
 
 For an intentional future live trial with an explicitly chosen model and normal SDK account configuration:
 
