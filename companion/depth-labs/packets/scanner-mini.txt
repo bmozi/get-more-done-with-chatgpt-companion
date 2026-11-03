@@ -1,7 +1,7 @@
 SEPARATE FICTIONAL MINI PACKET FOR CHAPTER 7 — not the SDK application's fixtures
-REQUIREMENT-R1: duplex required; cap $420 delivered.
-QUOTE-Q1: Cedar $370 + $12 delivery + $20 required feeder.
-SPEC-S1: Cedar explicitly supports duplex.
+REQUIREMENT-R1: offline editing required; cap $420 delivered.
+QUOTE-Q1: Cedar $370 + $12 delivery + $20 required adapter.
+SPEC-S1: Cedar explicitly supports offline editing.
 NOTE-N1: Dune looks nicer; author thinks it does everything. No current Dune quote/spec supplied.
 QUOTE-Q2: current, replaces Q1 base price with $360; delivery and feeder unchanged.
 Undated conflicting message: delivery free, applicability unspecified.

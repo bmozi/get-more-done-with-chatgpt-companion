@@ -8,7 +8,7 @@
   "7": {
     "artifact": "Claim ledger",
     "task": "Remove SPEC-S1 from the mini packet.",
-    "reference": "Cedar cost remains calculable; required duplex is unverified. Q2 complete cost is $392, not a complete compliance determination.",
+    "reference": "Cedar cost remains calculable; required offline editing is unverified. Q2 complete cost is $392, not a complete compliance determination.",
     "kind": "authored reference; not an observed model or learner result"
   },
   "14": {
@@ -44,7 +44,7 @@
   "29": {
     "artifact": "Verified review",
     "task": "Seed a mandatory-cost omission in a draft.",
-    "reference": "Actual SDK fixture: Alder $329+$24+$49=$402. Under $390 cap it fails by $12. Do not invent a cheaper carrier kit.",
+    "reference": "Actual SDK fixture: Alder $329+$24+$49=$402. Under $390 cap it fails by $12. Do not invent a cheaper power adapter.",
     "kind": "authored reference; not an observed model or learner result"
   },
   "33": {
@@ -56,7 +56,7 @@
   "34": {
     "artifact": "Evaluation record",
     "task": "Find first material failure in a trace.",
-    "reference": "Actual four SDK fixtures: standard, lower-budget, film-required, unavailable current A. Do not claim new depth-lab tests are live SDK trials.",
+    "reference": "Actual four SDK fixtures: standard, lower-budget, video-editing-required, unavailable current A. Do not claim new depth-lab tests are live SDK trials.",
     "kind": "authored reference; not an observed model or learner result"
   },
   "41": {

@@ -59,8 +59,8 @@ class SourceStore:
 
 def quoted_amounts(text):
     """Read exactly this fixture's three quote fields; not a general document parser."""
-    patterns = [r'scanner: \$(\d+)', r'Delivery: \$(\d+)',
-                r'(?:mandatory photo carrier kit|Required desktop software licence): \$(\d+)']
+    patterns = [r'laptop: \$(\d+)', r'Delivery: \$(\d+)',
+                r'(?:mandatory power adapter|Required work-and-study software licence): \$(\d+)']
     amounts = []
     for pattern in patterns:
         match = re.search(pattern, text)
@@ -78,7 +78,7 @@ def reference_decision(store):
             amounts = quoted_amounts(store.sources[sid])
             costs.append({'source_id': sid, 'amounts': amounts, 'total': sum(amounts)})
     affordable = [c for c in costs if c['total'] <= store.case['budget']]
-    if store.case['requires_film']:
+    if store.case['requires_video_editing']:
         status, option = 'insufficient_capability_evidence', None
     elif affordable:
         status, option = 'supported_option', min(affordable, key=lambda c: c['total'])['source_id']
@@ -86,13 +86,13 @@ def reference_decision(store):
         status, option = 'no_supported_recommendation', None
     else:
         status, option = 'no_affordable_supported_option', None
-    unanswered = ['warranty_terms', 'representative_demand']
-    if store.case['requires_film']:
-        unanswered.append('film_capability')
+    unanswered = ['warranty_terms', 'regular_use_evidence']
+    if store.case['requires_video_editing']:
+        unanswered.append('video_editing_capability')
     if 'A-CURRENT' not in store.sources:
         unanswered.append('current_alder_quote')
     return {'status': status, 'option': option, 'costs': costs,
-            'unanswered': unanswered, 'demand_proven': False,
+            'unanswered': unanswered, 'regular_use_proven': False,
             'citations': sorted(store.sources)}
 
 
@@ -110,8 +110,8 @@ def validate_decision(store, answer):
     for cost in costs:
         if not isinstance(cost['amounts'], list) or any(type(n) is not int for n in cost['amounts']) or type(cost['total']) is not int:
             raise ValueError('Cost fields must contain integer dollars, not strings or booleans')
-    if answer['demand_proven'] is not False:
-        raise ValueError('The packet does not establish representative demand')
+    if answer['regular_use_proven'] is not False:
+        raise ValueError('The packet does not establish regular use')
     if not isinstance(answer['citations'], list) or not all(isinstance(s, str) for s in answer['citations']):
         raise ValueError('Citations must be source IDs')
     if set(answer['citations']) != store.read_ids or len(set(answer['citations'])) != len(answer['citations']):
@@ -133,36 +133,36 @@ def validate_decision(store, answer):
 def render_brief(store, answer):
     """Render checked fields. No unchecked model prose is promoted to a factual claim."""
     answer = validate_decision(store, answer)
-    lines = ['Maple Digital Archive — fictional board brief',
+    lines = ['the Maple family — fictional purchase brief',
              'Decision: ' + answer['status'].replace('_', ' '),
              'Option: ' + (answer['option'] or 'No supported selection'),
              f"Budget cap: ${store.case['budget']} (case update governs)"]
     for cost in answer['costs']:
         lines.append(f"{cost['source_id']}: " + ' + '.join('$' + str(n) for n in cost['amounts']) + f" = ${cost['total']}")
-    lines.extend(['Both available current quotations state support for loose photographic prints.' if len(answer['costs']) == 2 else 'The available current quotation states support for loose photographic prints.',
+    lines.extend(['Both available current quotations state support for everyday documents and web browsing.' if len(answer['costs']) == 2 else 'The available current quotation states support for everyday documents and web browsing.',
                   'A-OLD is superseded and is not evidence of current price.',
-                  'The interest note does not establish representative demand or willingness to pay.',
+                  'The interest note does not establish regular use or actual use over time.',
                   'Questions: ' + ', '.join(answer['unanswered']).replace('_', ' '),
                   'Sources read: ' + ', '.join(answer['citations']),
                   'Draft only. No order placed or vendor contacted.'])
     return '\n'.join(lines)
 
 
-INSTRUCTIONS = '''You prepare a structured decision for a FICTIONAL board briefing.
+INSTRUCTIONS = '''You prepare a structured decision for a FICTIONAL household purchase briefing.
 Use list_sources, then read every available source. Only use those sources.
-The task's budget and film requirement override conflicting BRIEF-01 requirements.
-Use current quotes, include delivery and mandatory extras, and do not infer film
-support or warranty terms. Five informal positive replies are not proven demand.
-Return JSON only with exactly: status, option, costs, unanswered, demand_proven,
+The task's budget and video-editing requirement override conflicting BRIEF-01 requirements.
+Use current quotes, include delivery and mandatory extras, and do not infer video editing
+support or warranty terms. Five informal positive replies are not established regular use.
+Return JSON only with exactly: status, option, costs, unanswered, regular_use_proven,
 citations. costs is a list of {source_id, amounts, total}; amounts contains the
-scanner, delivery and mandatory extra in that order, all integer dollars.
+laptop, delivery and mandatory extra in that order, all integer dollars.
 status is supported_option, no_affordable_supported_option,
 insufficient_capability_evidence, or no_supported_recommendation. option is a
-current quote source ID or null. If required film support is unspecified, use
+current quote source ID or null. If required video-editing support is unspecified, use
 insufficient_capability_evidence. Without A-CURRENT and with the remaining quote
 unaffordable, use no_supported_recommendation. unanswered contains warranty_terms
-and representative_demand; add film_capability when film is required and
-current_alder_quote if A-CURRENT is unavailable. demand_proven must be false.
+and regular_use_evidence; add video_editing_capability when video editing is required and
+current_alder_quote if A-CURRENT is unavailable. regular_use_proven must be false.
 Citations must include each source ID actually read, including superseded history.
 Never contact a vendor, place an order, or claim that an action happened.'''
 

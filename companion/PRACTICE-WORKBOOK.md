@@ -2,7 +2,7 @@
 
 All source packets are fictional. Prompts and reference answers are authored teaching material unless an evidence record explicitly says otherwise. Use the chapter first, attempt the changed condition, and consult the evaluator material afterward. Do not give expected answers to the assistant when measuring its first attempt.
 
-The [tool-library notice](first-result/notice.txt), [studio-plan terms](practice/studio-plans.json), [cost data](practice/studio-costs.csv), [learning log](practice/learning-week.json), [offer terms](practice/offer.json) and [scanner packet](briefing-agent/README.md) support the book projects.
+The [tool-library notice](first-result/notice.txt), [studio-plan terms](practice/studio-plans.json), [cost data](practice/studio-costs.csv), [learning log](practice/learning-week.json), [offer terms](practice/offer.json) and [laptop packet](briefing-agent/README.md) support the book projects.
 
 For each task retain: input/source version; request; actual response or file; your check; correction; changed-condition attempt. Record product access and configuration only when observed. A completed worksheet is not evidence that an automation ran.
 

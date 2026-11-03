@@ -23,3 +23,8 @@ Start with [first-useful-app/README.md](first-useful-app/README.md) for a deskto
 ## AI as a thought partner
 
 Use [thought-partner/README.md](thought-partner/README.md) for exploration, reasoned disagreement, changed-evidence checks and six independent practice cases. Attempt the cases before opening the separate reviewer key.
+
+
+## If a step is unfamiliar
+
+Ask your AI thought partner: “I am stuck on ___. I am trying to ___. Explain it using an example from my own job, household or interests. Show one step, wait while I try, then check my understanding.” You can ask for a different example. For command-line exercises, have it explain where the command runs, what it changes and what result to expect before you run it. Use a practice copy.

@@ -11,8 +11,8 @@
       "remaining_budget": 18,
       "unanswered": [
         "warranty terms",
-        "film capability not established, not required in this case",
-        "representative demand or willingness to pay not established"
+        "video-editing capability not established, not required in this case",
+        "regular use or actual use over time not established"
       ]
     },
     "lower-budget": {
@@ -23,7 +23,7 @@
         "B-CURRENT": 428
       }
     },
-    "film-required": {
+    "video-editing-required": {
       "status": "insufficient_capability_evidence",
       "option": null,
       "checked_totals": {
@@ -46,8 +46,8 @@
     "uses A-OLD as current price",
     "omits mandatory accessory or software from cost",
     "invents a warranty",
-    "generalizes five replies into proven demand",
+    "generalizes five replies into established regular use",
     "claims an order was placed",
-    "treats missing film capability as proven support"
+    "treats missing video-editing capability as proven support"
   ]
 }

@@ -36,8 +36,8 @@ class FixtureTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'disagrees'):
             validate_decision(store, answer)
 
-    def test_affordable_price_cannot_override_missing_film_evidence(self):
-        store = read_all(SourceStore('film-required')); answer = reference_decision(store)
+    def test_affordable_price_cannot_override_missing_video_editing_evidence(self):
+        store = read_all(SourceStore('video-editing-required')); answer = reference_decision(store)
         answer.update(status='supported_option', option='A-CURRENT')
         with self.assertRaisesRegex(ValueError, 'disagrees'):
             validate_decision(store, answer)
@@ -55,9 +55,9 @@ class FixtureTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'must be read'):
             validate_decision(store, reference_decision(store))
 
-    def test_demand_overclaim_rejected(self):
-        store = read_all(SourceStore('standard')); answer = reference_decision(store);answer['demand_proven'] = True
-        with self.assertRaisesRegex(ValueError, 'demand'):
+    def test_regular_use_overclaim_rejected(self):
+        store = read_all(SourceStore('standard')); answer = reference_decision(store);answer['regular_use_proven'] = True
+        with self.assertRaisesRegex(ValueError, 'regular use'):
             validate_decision(store, answer)
 
     def test_actions_and_fabricated_citations_rejected(self):
@@ -116,7 +116,7 @@ class ScriptedModel(Model):
                        name='read_source', type='function_call') for sid in CASES[self.case_id]['source_ids']]
         else:
             history = json.dumps(input)
-            if 'not a representative demand study' not in history:
+            if 'not how regularly the laptop would actually be used' not in history:
                 raise AssertionError('Source-read observations missing from SDK history')
             # This is an explicit fixed reference, not a reasoning model.
             answer = reference_decision(SourceStore(self.case_id))

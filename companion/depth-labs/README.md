@@ -1,6 +1,6 @@
 # Depth labs — local references and independent practice
 
-Begin with WORKBOOK.md and the corresponding book chapter. All packets are fictional. The scanner mini packet in Chapter 7 is intentionally separate from the original briefing-agent application. Its totals should not replace that application's source records.
+Begin with WORKBOOK.md and the corresponding book chapter. All packets are fictional. The laptop mini packet in Chapter 7 is intentionally separate from the original briefing-agent application. Its totals should not replace that application's source records.
 
 From this directory, using Python 3.10 or later:
 

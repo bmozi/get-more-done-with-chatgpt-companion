@@ -1,20 +1,20 @@
 {
   "A-CURRENT": {
     "components": {
-      "scanner": 329,
+      "laptop": 329,
       "delivery": 24,
-      "required_carrier": 49
+      "required_adapter": 49
     },
-    "supports_loose_prints": true,
-    "supports_film": null
+    "supports_documents_and_browsing": true,
+    "supports_video_editing": null
   },
   "B-CURRENT": {
     "components": {
-      "scanner": 299,
+      "laptop": 299,
       "delivery": 19,
       "required_software": 110
     },
-    "supports_loose_prints": true,
-    "supports_film": null
+    "supports_documents_and_browsing": true,
+    "supports_video_editing": null
   }
 }

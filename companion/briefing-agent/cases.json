@@ -9,7 +9,7 @@
       "SURVEY-01"
     ],
     "budget": 420,
-    "requires_film": false,
+    "requires_video_editing": false,
     "change": "Use the current decision brief."
   },
   {
@@ -22,11 +22,11 @@
       "SURVEY-01"
     ],
     "budget": 390,
-    "requires_film": false,
-    "change": "Board update: replace the $420 cap with $390. All other requirements stay the same."
+    "requires_video_editing": false,
+    "change": "Household update: replace the $420 cap with $390. All other requirements stay the same."
   },
   {
-    "id": "film-required",
+    "id": "video-editing-required",
     "source_ids": [
       "BRIEF-01",
       "A-OLD",
@@ -35,8 +35,8 @@
       "SURVEY-01"
     ],
     "budget": 420,
-    "requires_film": true,
-    "change": "Board update: film scanning is now required in addition to loose photographic prints."
+    "requires_video_editing": true,
+    "change": "Household update: video editing is now required in addition to everyday documents and web browsing."
   },
   {
     "id": "missing-current-a",
@@ -47,7 +47,7 @@
       "SURVEY-01"
     ],
     "budget": 420,
-    "requires_film": false,
+    "requires_video_editing": false,
     "change": "A-CURRENT is unavailable. Do not assume an older quote is current."
   }
 ]

@@ -15,7 +15,7 @@ def build_agent(store, model):
         """Read one allowed source ID. Filesystem paths are not accepted."""
         return json.dumps(store.read(source_id))
 
-    return Agent(name='Fictional board briefing', instructions=INSTRUCTIONS,
+    return Agent(name='Fictional household purchase briefing', instructions=INSTRUCTIONS,
                  model=model, tools=[list_sources, read_source])
 
 
