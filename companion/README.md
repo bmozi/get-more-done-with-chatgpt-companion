@@ -27,4 +27,4 @@ Use [thought-partner/README.md](thought-partner/README.md) for exploration, reas
 
 ## If a step is unfamiliar
 
-Ask your AI thought partner: “I am stuck on ___. I am trying to ___. Explain it using an example from my own job, household or interests. Show one step, wait while I try, then check my understanding.” You can ask for a different example. For command-line exercises, have it explain where the command runs, what it changes and what result to expect before you run it. Use a practice copy.
+Ask your AI thought partner: “I am stuck on [this step]. I am trying to [my goal]. Explain it using an example from my own job, household or interests. Show one step, wait while I try, then check my understanding.” You can ask for a different example. For command-line exercises, have it explain where the command runs, what it changes and what result to expect before you run it. Use a practice copy.
