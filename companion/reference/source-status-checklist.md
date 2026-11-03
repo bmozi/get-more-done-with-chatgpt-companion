@@ -9,4 +9,4 @@ For each source, record its ID, status, relevant claim and limitation. Use the a
 - Does the citation support the exact claim, including its conditions?
 - Are proposals, drafts and actions that actually occurred labeled separately?
 
-Practice distinction: A-OLD is historical. A-CURRENT establishes the current Alder quote. SURVEY-01 describes seven informal replies, five expressing possible interest; it does not establish representative demand or willingness to pay.
+Practice distinction: A-OLD is historical. A-CURRENT establishes the current Alder quote. SURVEY-01 describes seven family replies, five expressing possible interest in using the laptop; it does not establish actual regular use.
