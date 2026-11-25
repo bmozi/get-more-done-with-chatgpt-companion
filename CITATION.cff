@@ -1,0 +1,7 @@
+cff-version: 1.2.0
+message: "If you use these companion materials, please cite this repository and the revision you used."
+title: "Get More Done with ChatGPT — Reader Companion"
+authors:
+  - family-names: Briggs
+    given-names: John
+url: "https://github.com/bmozi/get-more-done-with-chatgpt-companion"

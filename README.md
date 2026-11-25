@@ -11,3 +11,12 @@ This repository includes practice files and examples only. The full books and pr
 ## Report a problem
 
 Use this repository’s Issues page. Include the chapter, filename, steps, expected result and actual result. Use fictional data; do not post credentials or personal records.
+
+## Citation and corrections
+
+Use [CITATION.cff](CITATION.cff) to attribute this companion, and record the
+commit or release you actually used. Citation information does not change the
+existing licensing terms, book edition, or evidence status of these materials.
+Report corrections through the repository’s [Issues](https://github.com/bmozi/get-more-done-with-chatgpt-companion/issues)
+with the affected file, expected result, actual result, and a safe example. Do
+not include credentials, confidential material, or personal records.
